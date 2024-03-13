@@ -8,6 +8,6 @@
 
 SELECT Customers.FirstName, Customers.LastName, Reservations.Date, Reservations.PartySize FROM 
 Customers JOIN Reservations ON Customers.CustomerID = Reservations.CustomerID
-WHERE Customers.LastName LIKE 'St%'
+WHERE Customers.LastName LIKE 'St%s_n%'
 AND Reservations.Date LIKE '%-06-14%'
 AND Reservations.PartySize = 4 ;
